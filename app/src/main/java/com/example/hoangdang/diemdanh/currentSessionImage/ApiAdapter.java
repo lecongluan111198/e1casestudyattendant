@@ -191,11 +191,12 @@ public class ApiAdapter {
     public void GetBaseURL(Context context, final VolleyCallBack callBack)
     {
         RequestQueue requestQueue = Volley.newRequestQueue(context);
-        String url = "https://checkingattendance.000webhostapp.com/config.php";
+//        String url = "https://checkingattendance.000webhostapp.com/config.php";
+        String url = "https://e1attendance.000webhostapp.com/config.php";
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Log.wtf("HiepGetBaseURL",response);
+                Log.wtf("HiepGetBaseURLkkk",response);
                 try {
                     callBack.onSuccess(response);
                 } catch (JSONException e) {
